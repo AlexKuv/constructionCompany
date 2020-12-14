@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+}
+.header {
+  height: 740px;
+  left: 0px;
+  top: 0px;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  background: linear-gradient(
+      0deg,
+      rgba(64, 65, 73, 0.9),
+      rgba(64, 65, 73, 0.9)
+    ),
+    url("../img/header.png"), #404149;
+}
+/*основной контейнер*/
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0px auto;
+}
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+.background-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #f7654a;
+  display: inline-block;
+}
+.header-button {
+  position: absolute;
+  left: 10px;
+  right: 35px;
+  top: 25px;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  border: none;
+}
+.header-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: -7px;
+}
+.header-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 7px;
+}
+.Title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 112px;
+}
+.description {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 35px;
+}
+.numbers {
+  margin-top: -150px;
+  text-align: center;
+  background: #f7f7f7;
+  height: 300px;
+}
+.years {
+  display: inline-block;
+  width: 190px;
+  height: 186px;
+  margin-right: 30px;
+  margin-top: 56px;
+}
+.years-Title {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7654a;
+  margin: 0;
+}
+.years-w {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+.years-e {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #999999;
+  margin: 0;
+}
+.project {
+  text-align: center;
+  margin: 0;
+  height: 681px;
+  margin-top: 100px;
+}
+.project-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #404149;
+}
+.project-lict {
+  width: 350px;
+  height: 578px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.trait {
+  width: 55px;
+  height: 6px;
+  background: #f7654a;
+}
+.title2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+  margin: 0;
+  text-align: left;
+}
+.project-description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+}
+.mail {
+  background-color: #f7654a;
+  height: 181px;
+}
+.mail-1 {
+  display: inline-block;
+}
+.mail-title {
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 30px;
+}
+.mail-description {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 20px;
+}
+.mail-button {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 14px 30px;
+  float: right;
+  margin-top: 73px;
+}
+.mail-icon {
+  margin-right: 15px;
+}
+.mail-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.services {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.service-title {
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.service-item {
+  margin-left: 2px;
+  margin-right: 15px;
+  margin-top: 30px;
+  display: inline-block;
+  width: 350px;
+  height: 250px;
+  background: #f7f7f7;
+  text-align: center;
+  vertical-align: middle;
+}
+.service-logo {
+  display: inline-block;
+  margin-top: 59px;
+}
+.service-link {
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.portfolio {
+  text-align: center;
+}
+.portfolio-img {
+  width: 350px;
+  height: 307px;
+}
+.arrow {
+  display: inline-block;
+}
+.question-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.question-main {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #f7654a;
+  display: inline-block;
+  margin: 0;
+}
+.question-item {
+  max-width: 730px;
+}
+.answer {
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  display: none;
+}
+
+.check {
+  display: none;
+}
+.check-active {
+  display: block;
+}
+.partners {
+  margin-top: 150px;
+  text-align: center;
+  background-color: #404149;
+  padding: 100px 0;
+}
+.partners-tittle {
+  margin-top: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.partners-block {
+  display: flex;
+  justify-content: center;
+}
+.partners-item {
+  flex-basis: 20%;
+  width: 170px;
+  height: 61px;
+  margin-left: 65px;
+}
+.reviews {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.reviews-title{
+  text-align: center;
+}
+.reviews-description {
+  padding: 30px;
+  background: #F7F7F7;
+}
+.reviews-block {
+  display: flex;
+}
+.reviews-item {
+  margin-left: 10px;
+  flex-basis: 33%;
+}
+.reviews-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color:gray;
+}
+.reviews-footer {
+  font-weight: 500;
+  font-size: 21px;
+  color: #000000;
+  text-align: center;
+}
+.reviews-span {
+  font-weight: 500;
+  font-size: 21px;
+  color: #F7654A;
+}
+.contacts {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contacts-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+.contacts-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact-text {
+  font-weight: 500;
+  font-size: 24px;
+  color: #999999;
+}
+.contacts-item {
+    text-align: center;
+    flex-basis: 25%;
+}
+.contacts-description {
+  font-size: 24px;
+  line-height: 36px;
+}
+.contacts-mail {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: #F7654A;
+}
+.footer {
+  background: #404149;
+}
+.footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+.developer {
+   color: rgb(13, 124, 128);
+   text-decoration: none;
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
